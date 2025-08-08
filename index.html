@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kogniva</title>
     <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --accent-color: #8e44ad;
+            --link-color: #9b59b6;
+            --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffffff;
-            color: #1a1a1a;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -17,22 +24,37 @@
             padding: 40px;
         }
         img {
-            max-width: 200px;
-            margin-bottom: 20px;
+            max-width: 220px;
+            margin-bottom: 25px;
         }
         h1 {
-            font-size: 2.5rem;
-            color: #4B0082;
+            font-size: 2.8rem;
+            color: var(--accent-color);
         }
         p {
             font-size: 1.2rem;
-            max-width: 600px;
+            max-width: 640px;
+            margin-bottom: 30px;
+        }
+        .links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: var(--link-color);
+            font-weight: bold;
+        }
+        .links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <img src="Kogniva_Logo.png" alt="Kogniva Logo">
-    <h1>Welcome to Kogniva</h1>
-    <p>An open-source Kotlin AI framework for building intelligent applications.</p>
+<img src="Kogniva_Logo_Alt.png" alt="Kogniva Logo">
+<h1>Welcome to Kogniva</h1>
+<p>An open-source Kotlin AI framework for building intelligent applications.</p>
+<div class="links">
+    <a href="https://github.com/Kogniva" target="_blank">GitHub</a>
+<!--    <a href="https://kogniva.org/docs" target="_blank">Documentation</a>-->
+    <a href="https://discord.gg/FTFeNBDn" target="_blank">Discord</a>
+</div>
 </body>
 </html>
